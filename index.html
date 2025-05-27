@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratorio JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Laboratorio JavaScript</h1>
+
+  <section>
+    <h2>1. ¿Es un palíndromo?</h2>
+    <input type="text" id="palindromoInput" placeholder="Ej: Anita lava la tina">
+    <button onclick="verificarPalindromo()">Verificar</button>
+    <p id="resultadoPalindromo"></p>
+  </section>
+
+  <section>
+    <h2>2. Comparar dos números</h2>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <button onclick="compararNumeros()">Comparar</button>
+    <p id="resultadoComparacion"></p>
+  </section>
+
+  <section>
+    <h2>3. Mostrar vocales</h2>
+    <input type="text" id="fraseVocales" placeholder="Escribe una frase">
+    <button onclick="mostrarVocales()">Mostrar</button>
+    <p id="vocalesEncontradas"></p>
+  </section>
+
+  <section>
+    <h2>4. Contar vocales</h2>
+    <input type="text" id="fraseConteo" placeholder="Escribe una frase">
+    <button onclick="contarVocales()">Contar</button>
+    <p id="conteoVocales"></p>
+  </section>
+
+  <section>
+  <h2>5. AJAX - Obtener contenido de una URL</h2>
+  <label for="urlInput">Introduce una URL:</label>
+  <input type="text" id="urlInput">
+  <button onclick="realizarPeticion()">Mostrar Contenidos</button>
+
+  <h3>Zona de contenidos:</h3>
+  <div id="contenidoRespuesta" class="bloque"></div>
+
+  <h3>Estado de la petición:</h3>
+  <p id="estadoPeticion"></p>
+
+  <h3>Cabeceras de respuesta:</h3>
+  <pre id="cabecerasRespuesta"></pre>
+
+  <h3>Código de estado:</h3>
+  <p id="codigoEstado"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
